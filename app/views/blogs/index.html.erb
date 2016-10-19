@@ -1,0 +1,80 @@
+<section id="image-static">
+        <span class="overlay-bg"></span>
+        <div class="fullimage-container titlize" id="trends-header" >
+            <div class="container pagize">
+            	<div class="row">
+                	<div class="col-md-12 textalignleft">
+                        <h2>Trends</h2>
+                  </div>
+            	</div>
+            </div>
+        </div>
+</section>
+
+
+
+<!-- <div class="row">
+
+<% @blogs.each do |blog| %>
+
+  <div class="col-md-6">
+    <div class="panel panel-default"></div>
+      <div class="panel-heading">
+          <h3><%= blog.post_title %></h3>
+      </div>
+      <div class="panel-body">
+        <p><small><em><%= time_ago_in_words(blog.created_at) %> ago</em></small></p>
+        <p><%= blog.entry %></p>
+      </div>
+  </div>
+<% end %>
+</div> -->
+
+<div class="row">
+<% @blogs.each do |blog| %>
+
+
+<div class="wrapper">
+
+    		<div class="card radius shadowDepth1">
+    			<div class="card__image border-tlr-radius">
+    			     <img src="http://lorempixel.com/400/200/sports/" alt="image" class="border-tlr-radius">
+          </div>
+
+    			<div class="card__content card__padding">
+                    <div class="card__share">
+
+                        <div class="card__social">
+                            <a class="share-icon facebook" href="#"><span class="fa fa-facebook"></span></a>
+                            <a class="share-icon twitter" href="#"><span class="fa fa-twitter"></span></a>
+                            <a class="share-icon googleplus" href="#"><span class="fa fa-google-plus"></span></a>
+                        </div>
+
+                        <a id="share" class="share-toggle share-icon" href="#"></a>
+                    </div>
+
+    				<div class="card__meta">
+    					<a href="#"><%= blog.category  %></a>
+                <time><%= time_ago_in_words(blog.created_at) %> ago</time>
+    				</div>
+
+    				<article class="card__article">
+	    				<h2><a href="#"><%= link_to blog.post_title, blog %></a></h2>
+
+	    				<p><%= blog.entry.truncate_words(20) %></p>
+	    			</article>
+    			</div>
+
+    			<div class="card__action">
+
+    				<div class="card__author">
+    					<img src="http://lorempixel.com/40/40/sports/" alt="user">
+    					<div class="card__author-content">
+    						By <a href="#"><%= blog.author %></a>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+  <% end %>
+    </div>

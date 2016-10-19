@@ -1,0 +1,42 @@
+<nav class="lob-nav">
+
+    <div class="visible-xs slide-nav">
+    	<div class="slide-dir slide-left"></div>
+    	<div class="slide-dir slide-right"></div>
+    </div>
+
+    <div id="swipe-nav" class="home-container clearfix">
+
+<!-- tablet/desktop nav -->
+
+      <ul class="col-sm-10 hidden-xs">
+          <li class="lob-experiential">
+            <%= link_to(raw("<i></i><span>Experiential Content</span>"), capabilities_experiential_content_path) %>
+          </li>
+
+        	<li class="lob-immersive">
+            <%= link_to(raw("<i></i><span>Immersive<br>Experience Design</span>"), capabilities_immersive_experience_design_path) %>
+          </li>
+
+        	<li class="lob-digital">
+            <%= link_to(raw("<i></i><span>Social Interaction</span>"), capabilities_social_interaction_path) %>
+          </li>
+
+	        <li class="lob-programming">
+
+          <%= link_to(raw("<i></i><span>Control System<br>Programming</span>"), capabilities_control_system_programming_path) %>
+
+          </li>
+
+      	</ul>
+
+
+<!-- mobile nav -->
+        <ul class="col-sm-10 visible-xs">
+        	<li class="lob-experiential"><%= link_to(raw("<i></i><span>Experiential Content</span>"), capabilities_experiential_content_path) %></li>
+        	<li class="lob-immersive"><%= link_to(raw("<i></i><span>Immersive<br>Experience Design</span>"), capabilities_immersive_experience_design_path) %></li>
+	        <li class="lob-digital"><%= link_to(raw("<i></i><span>Social Interaction</span>"), capabilities_social_interaction_path) %></li>
+	        <li class="lob-programming"><%= link_to(raw("<i></i><span>Control System<br>Programming</span>"), capabilities_control_system_programming_path) %></li>
+      	</ul>
+    </div>
+  </nav>

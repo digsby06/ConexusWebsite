@@ -1,0 +1,139 @@
+// Place all the styles related to the Features controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "brandcolors";
+
+// /******************************* Features */
+ .mosaics img {width: 100%; display: block;}
+
+
+.mosaics {
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+  max-width: 870px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mosaic {
+  width: 40%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  margin: 3px 3px;
+}
+
+.mosaic:after {
+  content: " ";
+  position: absolute;
+  display: block;
+  z-index: 2;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+// .mosaic:nth-child(15n+4) {
+//   width: 66%;
+// }
+// .mosaic:nth-child(15n+4) {
+//   width: 66%;
+// }
+// .mosaic:nth-child(15n+7) img{
+//  width: 200%;
+//  margin-left: -50%;
+// }
+// .mosaic:nth-child(15n+8) img{
+//  width: 200%;
+//  margin-left: -50%;
+// }
+// .mosaic:nth-child(15n+14) img{
+//  width: 200%;
+//  margin-left: -50%;
+// }
+// .mosaic:nth-child(15n+15) {
+//   width: 66%;
+// }
+@media (max-width: 550px) {
+  .mosaic {
+    float: none;
+    width: 100% !important;
+  }
+}
+
+.clearfix, .list {
+  zoom: 1;
+}
+.clearfix:before, .list:before, .clearfix:after, .list:after {
+  content: " ";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.clearfix:after, .list:after {
+  clear: both;
+}
+
+.is-hidden {
+  display: none !important;
+}
+
+
+.load-more, .loading {
+  display: block;
+  padding: 14px 26px;
+  border-radius: 3px;
+  clear: both;
+  background-color: #ccc;
+  color: #666;
+  width: 144px;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.load-more:hover {
+  background-color: #333;
+  color: white;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.list {
+  width: 1000px;
+  margin: 20px auto;
+}
+
+.element {
+  width: 400px;
+  height: 400px;
+  background-color: #ccc;
+  float: left;
+  margin: 50px;
+  transform: scale(0.01);
+}
+
+.element-in {
+  animation: listIn 0.4s ease;
+  transform: scale(1);
+}
+
+@keyframes listIn {
+  from {
+    transform: scale(0.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+
+.feature-headline{
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: $conexusblue;
+}

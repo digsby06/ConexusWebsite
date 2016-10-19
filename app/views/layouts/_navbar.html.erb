@@ -1,0 +1,41 @@
+<div class="sticky-header">
+<div class="container">
+	<div class="row">
+		<div class="col-md-3">
+			<div id="logo">
+				<%= link_to(image_tag("conexus-technology-logo.png", :alt => "Conexus Technology", :title => "Home"), root_path) %>
+			</div>
+		</div>
+		<div class="col-md-9">
+			<!-- Mobile Menu -->
+			<a id="mobile-nav" class="menu-nav" href="#menu-nav"><span class="menu-icon"></span></a>
+			<!-- Standard Menu -->
+			<div id="menu">
+				<ul id="menu-nav" class="superfish">
+					<li><%= link_to "Home", root_path %></li>
+					<li><%= link_to "About", about_path %></li>
+					<li><%= link_to "Experience", experience_path %></li>
+					<li><%= link_to "Trends", blogs_path %></li>
+					<li><%= link_to "Contact", contact_path %></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+<div id="navigation-mobile" style="display: none;">
+	<div class="container">
+    	<div class="row">
+        	<div class="col-md-12">
+            	<ul id="menu-nav-mobile">
+            		<li><%= link_to "Home", root_path %></li>
+					<li><%= link_to "About", about_path %></li>
+					<li><%= link_to "Experience", experience_path %></li>
+					<li><%= link_to "Blog", "#" %></li>
+					<li><%= link_to "Contact", contact_path %></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

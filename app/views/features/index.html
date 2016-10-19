@@ -1,0 +1,31 @@
+<!-- <div class="message">
+  <div class="height"> </div>
+  <div class="scroll"></div>
+  <div class="bottom"></div>
+</div> -->
+<section id="image-static">
+        <span class="overlay-bg"></span>
+        <div class="fullimage-container titlize" id="contact-header">
+                    <div class="container pagize">
+            	<div class="row">
+                	<div class="col-md-12 textalignleft">
+                        <h2>Our Work</h2>
+                    </div>
+            	</div>
+            </div>
+        </div>
+</section>
+
+<div class="list">
+	  <% @features.each do |feature| %>
+  <div class="element element-in">
+		<%= link_to (image_tag feature.image.url), feature %>
+    <p class="feature-headline"><%= feature.title %></p>
+	</div>
+
+	  <% end %>
+</div>
+
+<!-- <div class="load-more is-hidden">Load more</div> -->
+
+<!-- <div class="hidden-content is-hidden"></div> -->

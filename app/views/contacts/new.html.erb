@@ -1,0 +1,61 @@
+<section id="image-static">
+        <span class="overlay-bg"></span>
+        <div class="fullimage-container titlize" id="contact-header">
+                    <div class="container pagize">
+            	<div class="row">
+                	<div class="col-md-12 textalignleft">
+                        <h2>Contact</h2>
+                    </div>
+            	</div>
+            </div>
+        </div>
+</section>
+
+<section id="contact-headline">
+  <h1 id="page_title">Conexus Technology</h1>
+  <p>1200 E Morehead St., Suite 275 </p>
+  <p>Charlotte, NC 28204 | phone: 704-000-000</p>
+</section>
+
+<section class="contact-wrap">
+	<%= form_for @contact, :html => {:class => 'contact-form'} do |f| %>
+
+    <div class="col-sm-12">
+      <div class="input-block">
+        <%= f.label :name %>
+        <%= f.text_field :name, :class => 'form-control',  required: true %>
+      </div>
+    </div>
+
+    <div class="col-sm-12">
+      <div class="input-block">
+        <%= f.label :email %>
+        <%= f.text_field :email, :class => 'form-control',  required: true %>
+      </div>
+    </div>
+
+    <!-- <div class="col-sm-12">
+      <div class="input-block">
+        <%= f.label :name, 'Subject' %>
+        <%= f.text_field :name, :class => 'form-control',  required: true %>
+      </div>
+    </div> -->
+
+    <div class="col-sm-12">
+      <div class="input-block textarea">
+        <%= f.label :message, 'Leave a message here' %>
+        <%= f.text_area :message, :class => 'form-control', as: :text,  required: true %>
+      </div>
+    </div>
+
+		<div class="hidden">
+			<%= f.label :nickname %><br>
+			<%= f.text_field :nickname, hint: 'leave this field blank' %>
+		</div>
+
+    <div class="col-sm-12">
+      	<%= f.submit 'Send', class: "square-button" %>
+    </div>
+
+	<% end %>
+</section>
