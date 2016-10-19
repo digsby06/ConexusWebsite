@@ -5,6 +5,8 @@ gem 'rails', '4.2.5.1'
 gem 'owlcarousel-rails'
 gem 'masonry-rails'
 
+gem "animate-rails"
+gem 'wow-rails'
 gem 'compass', '~> 1.0', '>= 1.0.3'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'

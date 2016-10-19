@@ -16,4 +16,5 @@
 //= require masonry/jquery.masonry
 //= require isotope
 //= require owl.carousel
+//= require wow
 //= require_tree .
