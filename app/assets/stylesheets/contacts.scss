@@ -94,7 +94,7 @@ $form-bg         : #fff;
     }
     .square-button{
         background-color: rgba(white, .8);
-        color: darken($conexusblue, 10%);
+        color: $conexusblue;
         font-size: 26px;
         text-transform: uppercase;
         font-weight: 700;

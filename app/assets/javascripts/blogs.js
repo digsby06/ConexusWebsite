@@ -1,4 +1,4 @@
-$(document).ready(function($) {
+jQuery(function($) {
 
 	$('.card__share > a').on('click', function(e){
 		e.preventDefault() // prevent default action - hash doesn't appear in url

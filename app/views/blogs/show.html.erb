@@ -1,14 +1,38 @@
-<p id="notice"><%= notice %></p>
+<section id="image-static">
+        <div class="fullimage-container">
+              <% unless @blog.hero_file_name.nil? %>
+                  <img src="<%= @blog.hero(:small) %>" srcset="<%= @blog.hero(:small) %> 640w, <%= @blog.hero(:large) %> 1280w" alt="Responsive Image Example" />
+              <% end %>
+        </div>
+</section>
 
-<p>
-  <strong>Post title:</strong>
-  <%= @blog.post_title %>
-</p>
 
-<p>
-  <strong>Entry:</strong>
-  <%= @blog.entry %>
-</p>
-
-<%= link_to 'Edit', edit_blog_path(@blog) %> |
-<%= link_to 'Back', blogs_path %>
+<div id="content">
+    <section class="main-content default-padding shadow-off">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="text-block textaligncenter about-us">
+                                <h2><%= @blog.post_title %></h2>
+                                <p>By: <%= @blog.author %></p>
+                                <div class="datesquare">
+                                    <p><%= @blog.published_at.strftime("%d") %></p>
+                                    <p><%= @blog.published_at.strftime("%^b") %></p>
+                                </div>
+                                <!-- <p><%= @blog.published_at.strftime("%d %^b") %></p> -->
+                            </div>
+                            <div class="text-block margin-60">
+                              <p><%= @blog.entry %></p>
+                            </div>
+                            <div class="textaligncenter">
+                              <%= link_to 'Back', blogs_path, class: "button-main" %>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

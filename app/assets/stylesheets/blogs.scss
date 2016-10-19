@@ -2,6 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@import "brandcolors";
+
 *,
 *:after,
 *:before {
@@ -217,3 +219,27 @@ h2 {
 	.googleplus:hover {
 		color: #eee;
 	}
+
+	.datesquare {
+	    position: absolute;
+	    top: -69px;
+	    left: 0;
+	    background-color: $conexusblue;
+	    width: 64px;
+	    height: 64px;
+	    text-align: center;
+	    padding-top: 28px;
+	    z-index: 2;
+			font-weight: bold;
+	}
+
+.datesquare p {
+    font-size: 2.8em !important;
+    line-height: 0 !important;
+    color: #fff;
+    margin: 0 !important;
+}
+.datesquare p:nth-of-type(2) {
+    font-size: 0.9em !important;
+    padding-top: 24px !important;
+}

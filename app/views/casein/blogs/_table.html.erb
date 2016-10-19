@@ -6,7 +6,7 @@
 			<th><%= casein_sort_link "Post title", :post_title %></th>
 			<th><%= casein_sort_link "Entry", :entry %></th>
 			<th><%= casein_sort_link "Category", :category %></th>
-			<th><%= casein_sort_link "Author", :author %></th>
+			<th><%= casein_sort_link "Published", :published %></th>
 			<th>&nbsp;</th>
 		</tr>
 	</thead>
@@ -14,7 +14,7 @@
 	<% blogs.each do |blog| %>
 		<tr>
 			<td><%= casein_table_cell_link blog.post_title, casein_blog_path(blog) %></td>
-			<td><%= casein_table_cell_link blog.entry, casein_blog_path(blog) %></td>
+			<td><%= link_to truncate(strip_tags(blog.entry).html_safe, length: 300), casein_blog_path(blog) %></td>
 			<td><%= casein_table_cell_link blog.category, casein_blog_path(blog) %></td>
 			<td><%= casein_table_cell_link blog.author, casein_blog_path(blog) %></td>
 			<td class="delete">
