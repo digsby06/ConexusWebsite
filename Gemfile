@@ -2,13 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.2.5.1'
 
-group :development do
-  gem 'web-console', '~> 2.0'
-  gem 'meta_request'
-  gem 'spring'
-  # Use sqlite3 as the database for Active Record
-  gem 'sqlite3'
-end
+
 
 group :production do
   gem 'pg'
@@ -51,6 +45,13 @@ gem 'actionpack-page_caching'
 gem 'acts-as-taggable-on', '~> 3.4'
 gem 'friendly_id', '~> 5.0.0'
 
+group :development do
+  gem 'web-console', '~> 2.0'
+  gem 'meta_request'
+  gem 'spring'
+  # Use sqlite3 as the database for Active Record
+  gem 'sqlite3'
+end
 
 
 # Use ActiveModel has_secure_password
