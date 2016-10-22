@@ -1,3 +1,5 @@
+@import "brandcolors";
+
 #owl-slider .owl-item div{
   padding:5px;
 }
@@ -18,4 +20,108 @@
 
 #button-container {
   margin-top: 3rem;
+}
+
+/* Project Grid **********************************/
+
+.clearfix, .list {
+  zoom: 1;
+}
+
+.clearfix:before, .list:before, .clearfix:after, .list:after {
+  content: " ";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+.clearfix:after, .list:after {
+  clear: both;
+}
+
+.is-hidden {
+  display: none !important;
+}
+
+.list {
+  width: 1000px;
+  margin: 20px auto;
+}
+
+.element {
+  width: 400px;
+  height: 400px;
+  // background-color: #ccc;
+  float: left;
+  margin: 50px;
+  transform: scale(0.01);
+}
+
+.element-in {
+  animation: listIn 0.4s ease;
+  transform: scale(1);
+}
+
+@keyframes listIn {
+  from {
+    transform: scale(0.1);
+  }
+  to {
+    transform: scale(1);
+  }
+
+}
+.feature-headline {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  color: $white;
+}
+
+
+.project-item-overlay{
+  figure {
+    display: block;
+    position: relative;
+    float:left;
+    overflow: hidden;
+    width:400px;
+    padding:0;
+    margin: 1%;
+  }
+figcaption {
+  position: absolute;
+  left:0;
+  height:100%;
+  background: rgba(0,175,232,.8);
+  padding: 0;
+  width:100%;
+
+ /*Starting Position and animation */
+  top: -100%;
+
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition:    all 0.5s ease;
+  -o-transition:      all 0.5s ease;
+}
+
+/* Inside text Styling  */
+
+ figcaption a, h1{
+   text-align:center;
+   margin:0 auto;
+   color:#fff;
+   padding:40% 5%;
+   text-decoration: none;
+ }
+
+/* Hover */
+
+figure:hover figcaption {
+  opacity: 1;
+  top: 0%;
+
+}
 }

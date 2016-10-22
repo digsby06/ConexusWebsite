@@ -1,17 +1,5 @@
-/*-----------------------------------------------------------------------------------
-
-    Theme Name: Klaus - Retina Multi-Purpose WordPress Theme
-    Theme URI: http://www.demo.alessioatzeni.com/klaus/
-    Description: Klaus Theme for photostudio, creative or digital agency, frelancers, business. Based on a unique, clean & minimal design and packed with a tons of cool features.
-    Author: Alessio Atzeni
-    Author URI: http://www.alessioatzeni.com
-    Version: 1.5.1
-
-    License: GNU General Public License version 3.0 & Envato Regular/Extended License
-    License URI:  http://www.gnu.org/licenses/gpl-3.0.html & http://themeforest.net/licenses
-
--------------------------------------------------------------------------------------
-
+/*------------------------------------------------------------------------------
+    00. Colors
     0.  Font-Family Elements Setup
     1.  Document Setup - Basic Style
     2.  Typography
@@ -45,6 +33,33 @@
     30. Media Queries
 
 -------------------------------------------------------------------------------------*/
+
+@import "brandcolors";
+
+/*-----------------------------------------------------------------------------------*/
+/* 00.  Colors
+/*-----------------------------------------------------------------------------------*/
+
+.conexusblue {
+  color: $conexusblue;
+}
+.conexusgreen {
+  color: $conexusgreen;
+}
+
+#links {
+text-align: center;
+  a{
+    color: $white;
+  }
+  a:hover,
+  a:active,
+  a:focus {
+      outline: 0;
+      color: $conexusblue;
+      text-decoration: none;
+  }
+}
 
 /*-----------------------------------------------------------------------------------*/
 /*  0.  Font-Family Elements Setup
@@ -254,48 +269,6 @@ img.alignnone {
     height: auto;
     display: block;
     max-width: none;
-}
-
-.wp-caption {
-    margin: 10px 20px 20px 20px;
-    max-width: 100%;
-    text-align: center;
-    font-style: italic;
-    font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-.wp-caption.aligncenter {
-    margin: 20px auto;
-}
-
-.wp-caption.alignleft {
-    margin-left: 0;
-}
-
-.wp-caption.alignright {
-    margin-right: 0;
-}
-
-.wp-caption.alignnone {
-    margin-left: 0;
-}
-
-.wp-caption img,
-.wp-caption img a {
-    margin: 0;
-    padding: 0;
-    border: 0 none;
-}
-
-.wp-caption
-.wp-caption-text {
-    margin: 0;
-    padding: 5px;
-}
-
-.wp-smiley {
-    margin: 0 !important;
-    max-height: 13px;
 }
 
 address {
@@ -1340,6 +1313,17 @@ header.sticky-header.nav-small #menu ul .sub-menu li a {
     -o-background-size: cover;
     background-size: cover;
 }
+
+#projects-header{
+    background: url(<%= asset_path 'header_projects.jpg' %>) center center no-repeat;
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
 
 #trends-header{
     background: url(<%= asset_path 'header_trends.jpg' %>) center center no-repeat;
@@ -7685,51 +7669,7 @@ html[xmlns] .slides {display: block;}
         width: 50%;
     }
 
-    /* Contact Form and Comment */
 
-    .wpcf7 input,
-    .wpcf7 .wpcf7-submit,
-    .wpcf7-form-control-wrap.budget,
-    #searchform input[type="text"],
-    .widget_search form input[type="text"] {
-        width: 100%;
-    }
-
-    #commentform input {
-        width: 100%;
-        margin-right: 0;
-    }
-
-    #commentform label,
-    #commentform span.required {
-        top: 0;
-    }
-
-    #commentform #submit {
-        width: 100%;
-    }
-
-    .children .comment {
-        padding-left: 0;
-    }
-
-    #commentform p {
-        margin-bottom: 15px;
-    }
-
-    #commentform .logged-in-as,
-    #commentform .comment-form-url,
-    #commentform .comment-form-comment {
-        margin-bottom: 30px;
-    }
-
-    #commentform p.form-submit {
-        margin: 0;
-    }
-
-    #commentform #submit {
-        margin-bottom: 20px;
-    }
 
     /* Sidebar */
 
@@ -7928,51 +7868,6 @@ html[xmlns] .slides {display: block;}
         width: 100%;
     }
 
-    /* Contact Form and Comment */
-
-    .wpcf7 input,
-    .wpcf7 .wpcf7-submit,
-    .wpcf7-form-control-wrap.budget,
-    #searchform input[type="text"],
-    .widget_search form input[type="text"] {
-        width: 100%;
-    }
-
-    #commentform input {
-        width: 100%;
-        margin-right: 0;
-    }
-
-    #commentform label,
-    #commentform span.required {
-        top: 0;
-    }
-
-    #commentform #submit {
-        width: 100%;
-    }
-
-    .children .comment {
-        padding-left: 0;
-    }
-
-    #commentform p {
-        margin-bottom: 15px;
-    }
-
-    #commentform .logged-in-as,
-    #commentform .comment-form-url,
-    #commentform .comment-form-comment {
-        margin-bottom: 30px;
-    }
-
-    #commentform p.form-submit {
-        margin: 0;
-    }
-
-    #commentform #submit {
-        margin-bottom: 20px;
-    }
 
     /* Sidebar */
 
@@ -8193,64 +8088,7 @@ html[xmlns] .slides {display: block;}
         width: 100%;
     }
 
-    /* Contact Form and Comment */
 
-    .wpcf7 input,
-    .wpcf7 .wpcf7-submit,
-    .wpcf7-form-control-wrap.budget,
-    #searchform input[type="text"],
-    .widget_search form input[type="text"] {
-        width: 100%;
-    }
-
-    #commentform input {
-        width: 100%;
-        margin-right: 0;
-    }
-
-    #commentform label,
-    #commentform span.required {
-        top: 0;
-    }
-
-    #commentform #submit {
-        width: 100%;
-    }
-
-    .comment-section {
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    .children .comment {
-        padding-left: 0;
-    }
-
-    #commentform p {
-        margin-bottom: 15px;
-    }
-
-    #commentform .logged-in-as,
-    #commentform .comment-form-url,
-    #commentform .comment-form-comment {
-        margin-bottom: 30px;
-    }
-
-    #commentform p.form-submit {
-        margin: 0;
-    }
-
-    #commentform #submit {
-        margin-bottom: 20px;
-    }
-
-    .comment-side {
-        display: none;
-    }
-
-    .comment .comment-cont {
-        margin-left: 0;
-    }
 
     /* Sidebar */
 
