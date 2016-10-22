@@ -31,8 +31,7 @@
 </div> -->
 
 <div class="row">
-<% @blogs.each do |blog| %>
-
+<% if @blogs.each do |blog| %>
 
 <div class="wrapper">
 
@@ -76,5 +75,30 @@
     			</div>
     		</div>
     	</div>
+
+
+  <% end.empty? %>
+
+  <div id="content">
+      <section class="main-content default-padding shadow-off">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="row">
+                          <div class="col-md-12">
+                              <div class="text-block textaligncenter about-us">
+                                  <h2>Looking for the latest trends?</h2>
+                                      <p>Check back at a later time for technology news and stories!</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+  </div>
+
   <% end %>
+
+
     </div>
