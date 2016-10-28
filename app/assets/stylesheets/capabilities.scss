@@ -1,3 +1,62 @@
 // Place all the styles related to the capabilities controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "brandcolors";
+// .image-list {
+//   // list-style: none;
+//   margin: 0;
+//   padding: 0;
+// }
+// .image-list * {
+//   padding: 0.3rem;
+// }
+//
+// .image-list img {
+//   display: block;
+// }
+
+.horizontal {
+  height: 80%;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow-x: scroll;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+
+}
+//
+.horizontal li {
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 2rem 1rem 2rem ;
+}
+//
+.horizontal li {
+  a {
+    font-size: 1.2rem;
+
+  }
+  a:hover,
+  a:active,
+  a:focus {
+    color: $conexusgreen;
+    padding-bottom: 30px;
+    border-bottom: 10px solid $conexusgreen;
+  }
+
+
+}
+//
+// .horizontal img {
+//   width: auto;
+//   height: 100%;
+// }
+//
+#capabilities-menu {
+  // width: 80%;
+  background-color: $white;
+
+}
