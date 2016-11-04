@@ -1,3 +1,73 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "brandcolors";
+
+/******************************* About Us Page */
+
+.about-us {
+  h2 {
+    font-size: 55px;
+    font-weight: 600;
+  }
+  p {
+    font-size: 18px;
+    line-height: 40px;
+  }
+}
+
+#ecologydesc {
+  text-shadow: 0 3px 3px rgba(0,0,0,0.7);
+}
+
+#ecologydesc p {
+color: $white;
+font-size: 2rem;
+line-height: 2.5rem;
+}
+
+#capabilities {
+  font-size: 18px;
+  text-align: center
+}
+
+#capabilities h4,
+#capabilities .tile.text time,
+.tile.text #capabilities time {
+  margin-bottom: 0.5em
+}
+
+#capabilities .capabilities-list {
+  overflow: auto
+}
+
+#capabilities .capabilities-list .capability {
+  text-align: center;
+  color: #999;
+  float: left;
+  width: 50%;
+  display: inline-block;
+  text-align: center;
+  margin: 0;
+}
+
+#capabilities .capabilities-list .capability a {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+#capabilities .capabilities-list .capability a:hover {
+  color: white;
+  background-color: $conexusblue !important;
+}
+
+#capabilities .capabilities-list.capability-count-2 .capability {
+  width: 50%;
+}
+
+#capabilities .capabilities-list.capability-count-1 .capability {
+  width: 100%;
+}
